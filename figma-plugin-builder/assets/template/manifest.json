@@ -1,0 +1,12 @@
+{
+  "name": "__PLUGIN_NAME__",
+  "id": "PLACEHOLDER_GENERATE_ID_BEFORE_PUBLISH",
+  "api": "1.0.0",
+  "editorType": ["figma"],
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  }
+}

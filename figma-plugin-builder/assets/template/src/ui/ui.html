@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>__PLUGIN_NAME__</title>
+    <!-- The build step inlines the bundled CSS and JS into this file. -->
+  </head>
+  <body>
+    <main class="panel">
+      <h1 class="title">__PLUGIN_NAME__</h1>
+      <p class="subtitle">Starter plugin — replace this with your own feature.</p>
+
+      <label class="field">
+        <span>Shape</span>
+        <select id="shape">
+          <option value="rectangle">Rectangle</option>
+          <option value="ellipse">Ellipse</option>
+          <option value="text">Text label</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>How many</span>
+        <input id="count" type="number" min="1" max="50" value="3" />
+      </label>
+
+      <label class="field">
+        <span>Color</span>
+        <input id="color" type="color" value="#4F46E5" />
+      </label>
+
+      <div class="actions">
+        <button id="cancel" class="btn" type="button">Close</button>
+        <button id="create" class="btn brand" type="button">Create</button>
+      </div>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>
