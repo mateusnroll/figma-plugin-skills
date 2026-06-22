@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Python packaging artifacts
+__pycache__/
+*.pyc
+
+# Node (none committed, but just in case a contributor builds the template here)
+node_modules/
+
+# NOTE: figma-plugin-builder.skill is intentionally committed so people can
+# download and install it without rebuilding.

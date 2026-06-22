@@ -1,0 +1,13 @@
+#!/bin/sh
+# Pre-commit hook: block commits that contain credentials.
+# Enable once with:  git config core.hooksPath hooks
+# (and make this file executable:  chmod +x hooks/pre-commit)
+
+node scripts/check-secrets.mjs --staged
+if [ "$?" -ne 0 ]; then
+  echo ""
+  echo "✖ Commit blocked by the secret scanner (see above)."
+  echo "  Fix the issue, then commit again. Re-check anytime with: npm run check:secrets"
+  exit 1
+fi
+exit 0

@@ -1,0 +1,17 @@
+# Dependencies (re-created by `npm install`)
+node_modules/
+
+# Build output (re-created by `npm run build`)
+dist/
+
+# Local-only secrets and config — NEVER commit real secrets.
+# .env is for your machine only; .env.example is the shareable template.
+.env
+.env.*
+!.env.example
+
+# Logs & OS cruft
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
